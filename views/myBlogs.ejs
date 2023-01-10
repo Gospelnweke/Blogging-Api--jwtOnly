@@ -1,0 +1,11 @@
+<%- include('partials/header'); -%> <%myblogs.forEach((myblog)=>{%>
+<ul class="recipes">
+  <li class="recipe">
+    <h4>Author: <%=myblog.author%></h4>
+    <h4>Title: <%=myblog.title%></h4>
+    <h4>Body: <%=myblog.body%></h4>
+    <h4>tags: <%=myblog.tags%></h4>
+    <h4>state: <%=myblog.state%></h4>
+  </li>
+</ul>
+<%})%> <%- include('partials/footer'); -%>
